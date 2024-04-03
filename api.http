@@ -1,8 +1,26 @@
-  POST http://localhost:3333/events
-  Content-Type: application/json
+POST http://localhost:3333/events
+Content-Type: application/json
   
-  {
-    "title": "Unite Summit",
-    "details": "Um evento para quem é apaixonado por programação",
-    "maximumAttendees": 100
-  }
+{
+    "title": "Novo evento2",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/37c8743f-ed7f-480e-8464-0b04ba9275ff/attendees
+Content-Type: application/json
+  
+{
+  "name": "Bruno Patez",
+  "email": "brunoapatez2@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/37c8743f-ed7f-480e-8464-0b04ba9275ff
+
+###
+
+GET http://localhost:3333/attendees/2/badge
